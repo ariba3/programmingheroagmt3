@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- tailwind daisy -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Manrope] container mx-auto px-6 lg:px-28 ">
+  <header class="pt-5 lg:pt-8
+ ">
+    <div class="navbar bg-base-100  pb-8 items-center ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a><span class="text-red-600">Home</span></a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-3xl font-extrabold inline pl-0">Hockey<span class="text-red-600">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a><span class="text-red-600">Home</span></a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end ">
+        <button class="hidden lg:flex btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+        <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+      </div>
+    </div>
+    <!-- carousal -->
+    <div class="px-2">
+      <div class="carousel w-full lg:relative ">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./image/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="hidden lg:flex card absolute m-8 lg:w-6/12 h-1/4 bg-primary text-primary-content lg:absolute bottom-0 right-0 lg:m-8">
+          <div class="card-body">
+            <h2 class="card-title">A Thrilling Sport on Ice</h2>
+            <p>Hockey is a fast-paced and exhilarating team sport played on ice, known for its speed, skill, and
+              physicality. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="card w-[98%] h-1/4 m-1 bg-primary text-primary-content lg:hidden">
+      <div class="card-body">
+        <h2 class="card-title">A Thrilling Sport on Ice</h2>
+        <p>Hockey is a fast-paced and exhilarating team sport played on ice, known for its speed, skill, and
+          physicality. </p>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- section -->
+  <div class="seconfsection mt-8 lg:mt-24 border-dashed border-t-2 border-indigo-200">
+    <div class="sectext text-center pt-5">
+      <h3 class="text-2xl  lg:text-4xl font-extrabold mb-3 mt-3 ">Winter Wolves Hockey Club</h3>
+      <p class="mb-16 px-8 pb-9 border-dashed border-b-2 border-indigo-200">A hockey club is an organized sports entity
+        that brings together individuals with a shared
+        passion for the game of hockey.</p>
+    </div>
+    <!-- progress -->
+    <div class="flex justify-center flex-col items-center lg:flex-row">
+      <div class="card w-96">
+        <figure class="px-10 ">
+          <div class="radial-progress " style="--value:87; color: rgb(248, 56, 56);" role="progressbar">87%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Player Development</h2>
+          <p class="text-base">Many hockey clubs actively engage in player development programs</p>
+        </div>
+      </div>
+      <div class="card w-96">
+        <figure class="px-10 ">
+          <div class="radial-progress " style="--value:95; color: rgb(103, 185, 103);" role="progressbar">95%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Leagues</h2>
+          <p class="text-base">Some hockey clubs participate in competitive leagues at various levels</p>
+        </div>
+      </div>
+
+      <div class="card w-96">
+        <figure class="px-10">
+          <div class="radial-progress" style="--value:90; color: orange;" role="progressbar">90%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Youth Development</h2>
+          <p class="text-base">Hockey clubs frequently invest in youth development programs</p>
+        </div>
+      </div>
+      <div class="card w-96  ">
+        <figure class="px-10">
+          <div class="radial-progress" style="--value:80; color: rgb(52, 52, 246);" role="progressbar">80%</div>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Inclusivity</h2>
+          <p class="text-base">Many hockey clubs strive to be inclusive, welcoming individuals from diverse</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 3rd section -->
+  <div class="seconfsection mt-8 lg:mt-24 border-dashed border-t-2 border-indigo-200">
+    <div class="sectext text-center pt-5">
+      <h3 class="text-2xl  lg:text-4xl font-extrabold mb-3 mt-3 ">Winter Wolves Hockey Club</h3>
+      <p class="mb-12 px-8 pb-9 border-dashed border-b-2 border-indigo-200">A hockey club is an organized sports entity
+        that brings together individuals with a shared
+        passion for the game of hockey.</p>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-6">
+      <div class="card w-[90%] lg:w-96 bg-base-100 shadow-xl image-full flex-1 ">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-[90%] lg:w-96 bg-base-100 shadow-xl image-full flex-1">
+        <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-start">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card w-[90%] lg:max-w-full bg-base-100 shadow-xl image-full flex-1">
+      <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
